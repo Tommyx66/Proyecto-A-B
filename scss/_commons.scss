@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $mainColor;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+
+
+p{
+  font-family: $mainFont;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: $textLight;
+  padding: 3rem 0 ;
+}

@@ -1,0 +1,50 @@
+.navbar {
+	background-color: $mainColor;
+	grid-template-columns: repeat(12, 1fr);
+	align-items: center;
+	margin-top: -1.3rem;
+
+	.logo {
+		width: 250px;
+
+
+	}
+
+	.menu {
+
+		li {
+			margin: 2rem;
+			list-style: none;
+			position: relative;
+
+			a {
+				color: rgb(243, 243, 243);
+				font-size: 3rem;
+				font-family: $secondaryFont;
+				font-weight: $textRegular;
+				padding: 2rem;
+				border: none;
+
+				text-transform: uppercase;
+				line-height: 2.4rem;
+				letter-spacing: 2px;
+				cursor: pointer;
+
+				&:hover {
+					color: $secondaryColor;
+					
+				}
+				
+
+				
+			}
+
+
+		}
+	}
+
+}
+
+.menu-bar {
+	display: none;
+}

@@ -1,0 +1,172 @@
+.banner {
+    h1 {
+        font-size: 6rem;
+        font-family: $mainFont;
+        font-weight: $textLight;
+    }
+
+    .carousel-inner {
+        div {
+            img {
+                min-width: 100%;
+                max-width: 100%;
+                object-fit: cover;
+                min-height: 70rem;
+                max-height: 70rem;
+
+                justify-content: center;
+            }
+        }
+
+    }
+
+}
+
+.intro {
+    background-color: $mainColor;
+    color: wheat;
+
+    div {
+        img {
+            min-width: 300px;
+            max-width: 300px;
+            min-height: 300px;
+            max-height: 300px;
+            padding: 5px;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    }
+}
+
+
+.dash {
+    background-color: black;
+    color: wheat;
+
+    @include button;
+
+    div {
+
+        .col {
+            background-color: rgb(64, 64, 70);
+
+        }
+
+        img {
+
+            min-width: 300px;
+            max-width: 300px;
+            object-fit: cover;
+            min-height: 300px;
+            max-height: 300px;
+            padding: 10px;
+
+        }
+    }
+
+}
+
+.team {
+    background-color: $thirdColor;
+    font-family: $secondaryFont;
+  
+    .colLawyerTeam {
+        background-color: $mainColor;
+    
+        @include button;
+        margin-top: 2rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        padding-top: 3rem;
+        color: wheat;
+  
+
+    }
+
+    .colImgTeam {
+        padding: 0px;
+   
+        img{
+           
+            min-width: 26.5vw;
+            max-width: 26.5vw;
+            padding: 1.8rem 1.8rem 0 1.8rem;
+      
+      
+            max-height: 42.8vh;
+            min-height: 42.8vh;
+            object-fit: cover;
+        }
+    }
+
+    .colEspTeam {
+        @include button;
+        margin-top: 8rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        padding-top: 5rem;
+        color: wheat;
+     
+
+    }
+}
+
+
+.contact {
+    background-color: $mainColor;
+    color: wheat;
+
+    @include button;
+}
+
+//Footer
+
+.footer {
+    background-color: black;
+    color: wheat;
+    font-family: $secondaryColor;
+
+    .socialMedia {
+        p {
+            padding: 1.8rem;
+        }
+
+        text-align: center;
+
+        img {
+            width: 60px;
+            margin: 6rem 0;
+            background-color: antiquewhite;
+        }
+    }
+
+    .logoPos {
+        ul {
+            margin-bottom: 20rem;
+        }
+
+        a {
+            color: wheat;
+            list-style: none;
+            text-decoration: none;
+            font-size: 1.8rem;
+        }
+
+        .logo {
+            margin-bottom: 10rem;
+            text-align: center;
+            width: 200px;
+        }
+    }
+
+    .contFooter div {
+        font-size: 2rem;
+    }
+}

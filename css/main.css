@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@100;300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&family=Open+Sans:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #7e0909;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 300;
+  padding: 3rem 0;
+}
+
+/* 
+@mixin button($ps, $pt, $color, $bx-shw) {
+	padding-left: $ps;
+	padding-top: $pt;
+	justify-content: center;
+	align-content: center;
+
+	padding-bottom: 10rem;
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: 2px solid $secondaryColor;
+	border-radius: 3rem;
+	color: $color;
+	padding: 1rem 2.5rem;
+	font-size: 1.8rem;
+	font-family: $mainFont;
+	text-transform: uppercase;
+	box-shadow: $bx-shw;
+	cursor: pointer;
+	font-weight: $textBold;
+	line-height: 2.2rem;
+
+	&:hover {
+		box-shadow: none;
+		background-color: rgb(141, 11, 11);
+		color: white;
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+	}
+
+} */
+.navbar {
+  background-color: #7e0909;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  margin-top: -1.3rem;
+}
+.navbar .logo {
+  width: 250px;
+}
+.navbar .menu li {
+  margin: 2rem;
+  list-style: none;
+  position: relative;
+}
+.navbar .menu li a {
+  color: rgb(243, 243, 243);
+  font-size: 3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  padding: 2rem;
+  border: none;
+  text-transform: uppercase;
+  line-height: 2.4rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.navbar .menu li a:hover {
+  color: #EEEBDD;
+}
+
+.menu-bar {
+  display: none;
+}
+
+.banner h1 {
+  font-size: 6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.banner .carousel-inner div img {
+  min-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  min-height: 70rem;
+  max-height: 70rem;
+  justify-content: center;
+}
+
+.intro {
+  background-color: #7e0909;
+  color: wheat;
+}
+.intro div img {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  padding: 5px;
+}
+.intro div .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dash {
+  background-color: black;
+  color: wheat;
+}
+.dash .button {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  color: wheat;
+}
+.dash .button:hover {
+  color: #EEEBDD;
+}
+.dash div .col {
+  background-color: rgb(64, 64, 70);
+}
+.dash div img {
+  min-width: 300px;
+  max-width: 300px;
+  object-fit: cover;
+  min-height: 300px;
+  max-height: 300px;
+  padding: 10px;
+}
+
+.team {
+  background-color: #D8B6A4;
+ background-image: url(../resources/img/bg/bg2.jpg);
+
+  font-family: "Open Sans", sans-serif;
+}
+.team .colLawyerTeam {
+  background-color: #7e0909;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding-top: 3rem;
+  color: wheat;
+}
+.team .colLawyerTeam .button {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  color: wheat;
+}
+.team .colLawyerTeam .button:hover {
+  color: #EEEBDD;
+}
+.team .colImgTeam {
+  padding: 0px;
+}
+.team .colImgTeam img {
+  min-width: 26.5vw;
+  max-width: 26.5vw;
+  padding: 1.8rem 1.8rem 0 1.8rem;
+  max-height: 42.8vh;
+  min-height: 42.8vh;
+  object-fit: cover;
+}
+.team .colEspTeam {
+  margin-top: 8rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding-top: 5rem;
+  color: wheat;
+}
+.team .colEspTeam .button {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  color: wheat;
+}
+.team .colEspTeam .button:hover {
+  color: #EEEBDD;
+}
+
+.contact {
+  background-color: #7e0909;
+
+  background-image: url(../resources/img/bg/bg1.jpg) ;
+
+  
+  color: wheat;
+}
+.contact .button {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  color: wheat;
+}
+.contact .button:hover {
+  color: #EEEBDD;
+}
+
+.footer {
+  background-color: black;
+  color: wheat;
+  font-family: #EEEBDD;
+}
+.footer .socialMedia {
+  text-align: center;
+}
+.footer .socialMedia p {
+  padding: 1.8rem;
+}
+.footer .socialMedia img {
+  width: 60px;
+  margin: 6rem 0;
+  background-color: antiquewhite;
+}
+.footer .logoPos ul {
+  margin-bottom: 20rem;
+}
+.footer .logoPos a {
+  color: wheat;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+.footer .logoPos .logo {
+  margin-bottom: 10rem;
+  text-align: center;
+  width: 200px;
+}
+.footer .contFooter div {
+  font-size: 2rem;
+}
+
+@media (max-width: 576px) {
+  .header .menu li {
+    margin: 2rem;
+    list-style: none;
+    position: relative;
+  }
+  .header .menu li a {
+    color: rgb(243, 243, 243);
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    padding: 2rem;
+    border: none;
+    text-transform: uppercase;
+    line-height: 2.4rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  .header .menu li a:hover {
+    color: #EEEBDD;
+  }
+  /*Boton Hamburguesa*/
+  .navbar {
+    position: relative;
+    z-index: 1;
+  }
+  .navbar .menu-bar {
+    display: block;
+    grid-column: 11/12;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  .navbar .menu {
+    position: absolute;
+    width: 150%;
+    height: auto;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    border-bottom: solid 2px #7e0909;
+    border-left: solid 2px #7e0909;
+    margin-top: 64rem;
+    padding-bottom: 10rem;
+    transform: translateX(170%);
+    transition: all 1s;
+  }
+  .navbar .menu li {
+    padding-top: 5.78rem;
+  }
+  .navbar .menu li a {
+    margin-right: 2rem;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    color: #7e0909;
+  }
+  .navbar .menu-toggle {
+    transform: translatex(-10%);
+  }
+}
+
+    form {
+      background-color: rgb(243, 243, 243);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #888888;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    input[type="text"], input[type="email"], textarea {
+      padding: 10px;
+      border: 1px solid #CCCCCC;
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+    input[type="submit"] {
+      background-color: #7e0909;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #7e0909;
+    }
+/*# sourceMappingURL=main.css.map */

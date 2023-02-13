@@ -1,0 +1,88 @@
+@include smartphone {
+
+    .header {
+        .menu {
+
+            li {
+                margin: 2rem;
+                list-style: none;
+                position: relative;
+
+                a {
+                    color: rgb(243, 243, 243);
+                    font-size: 1rem;
+                    font-family: $secondaryFont;
+                    font-weight: $textRegular;
+                    padding: 2rem;
+                    border: none;
+
+                    text-transform: uppercase;
+                    line-height: 2.4rem;
+                    letter-spacing: 2px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $secondaryColor;
+
+                    }
+
+
+
+                }
+
+
+            }
+        }
+
+    }
+    /*Boton Hamburguesa*/
+    .navbar {
+        position: relative;
+        z-index: 1;
+
+        .menu-bar {
+            display: block;
+            grid-column: 11/12;
+            font-size: 3rem;
+            cursor: pointer;
+        }
+
+        .menu {
+            position: absolute;
+            width: 150%;
+            height: auto;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            justify-content: space-evenly;
+            align-content: space-evenly;
+            border-bottom: solid 2px $mainColor;
+            border-left: solid 2px $mainColor;
+            margin-top: 64rem;
+            padding-bottom: 10rem;
+
+            transform: translateX(170%);
+            transition: all 1s;
+
+            li {
+                padding-top: 5.78rem;
+
+                a {
+                    margin-right: 2rem;
+                    font-size: 1.7rem;
+                    line-height: 2.4rem;
+                    color: $mainColor;
+                }
+            }
+
+        }
+
+        .menu-toggle {
+            transform: translatex(-10%);
+        }
+    }
+
+}
+
+
+    

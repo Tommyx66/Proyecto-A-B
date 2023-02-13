@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "sass": "^1.57.1"
+  },
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "Proyecto A&B",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass":"sass",
+    "sass:watch": "sass --watch scss/main.scss css/main.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tommyx66/ProyectoA-B.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tommyx66/ProyectoA-B/issues"
+  },
+  "homepage": "https://github.com/Tommyx66/ProyectoA-B#readme"
+}
